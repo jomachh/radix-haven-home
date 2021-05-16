@@ -1,0 +1,18 @@
+@import "lib/variables"
+@import "lib/mixins"
+
+.fab
+  @include center-flex
+  @include fab-size
+  background-color: rgba($grey-color, .5)
+  border-style: none
+  cursor: pointer
+  position: absolute
+  right: 300px
+  top: calc( 50vh - #{$fab-diameter / 2} )
+  transition: all 500ms ease
+
+  &:hover
+    transform: scale(1.1)
+    background-color: rgba($grey-color, .7)
+    box-shadow: 0px 0px 5px 0px rgba($grey-color,0.75)

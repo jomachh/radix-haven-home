@@ -1,0 +1,60 @@
+@import "lib/variables"
+@import "lib/mixins"
+
+$height: 80px
+$button-left-width: 300px
+$button-rigth-width: 170px
+
+.container
+  height: $height
+  display: flex
+  justify-content: space-between
+  align-items: center
+
+.logo
+  padding-left: 300px
+
+.ul
+  display: flex
+  list-style-type: none
+  margin: 0
+  a
+    padding-left: 15px
+    padding-right: 15px
+    @include title-style
+
+    &:hover
+      color: rgba($text-light, 0.5)
+
+.buttonsContainer
+  display: flex
+  @include center-flex
+  width: 300px
+
+.button
+  display: flex
+  @include center-flex
+  height: 50px
+  border-top-left-radius: $border-radius
+  border-bottom-left-radius: $border-radius
+  @include title-style
+  transition: all 500ms ease
+
+  &:nth-of-type(1)
+    padding-right: $button-rigth-width
+    background-color: $secundary-color
+    width: $button-left-width
+    &:hover
+      padding-right: 0
+    &:hover + .button
+      opacity: 0
+      z-index: -1
+
+  &:nth-of-type(2)
+    width: $button-rigth-width
+    background-color: $primary-color
+    z-index: 1
+    position: absolute
+    right: 0
+    &:hover
+      width: $button-left-width

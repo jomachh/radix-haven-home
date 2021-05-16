@@ -1,0 +1,17 @@
+@mixin center-flex
+  display: flex
+  align-items: center
+  justify-content: center
+
+@mixin title-style
+  color: $text-light
+  font-family: $titles-font
+  font-size: $title-size
+  font-weight: 600
+  line-height: 30px
+  transition: 300ms
+
+@mixin fab-size
+  height: $fab-diameter
+  width: $fab-diameter
+  border-radius: #{$fab-diameter / 2}

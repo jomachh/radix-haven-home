@@ -1,0 +1,78 @@
+@import "lib/variables"
+@import "lib/mixins"
+
+.container
+  min-height: 100vh
+  display: flex
+  flex-direction: column
+  height: 100vh
+
+.main
+  padding: 5rem 0
+  flex: 1
+  display: flex
+  flex-direction: column
+  max-width: $max-width
+  margin: 0 auto
+
+.footer
+  width: 100%
+  height: 100px
+  border-top: 1px solid #eaeaea
+  @include center-flex
+
+.triangle
+  width: 0
+  height: 0
+  border-left: 200px solid transparent
+  border-right: 200px solid transparent
+  border-bottom: 400px solid
+  position: absolute
+  &:nth-of-type(1)
+    border-bottom-color: rgba($primary-color, .5)
+    top: 300px
+    left: 150px
+    animation: blue-triangle 10000ms infinite
+  &:nth-of-type(2)
+    border-bottom-color: rgba($secundary-color, .5)
+    top: 200px
+    left: 200px
+    animation: green-triangle 10000ms infinite
+
+.hero
+  @include center-flex
+  flex-direction: column
+  h1
+    color: $text-light
+    margin-bottom: 1.5rem
+    span
+      color: $primary-color
+      align-self: flex-start
+
+.img_1
+  border-radius: $border-radius
+
+@keyframes blue-triangle
+  0%
+    transform: skew(30deg, 20deg)
+  25%
+    transform: skew(35deg, 15deg)
+  50%
+    transform: skew(0deg, 0deg)
+  75%
+    transform: skew(0deg, 55deg)
+  100%
+    transform: skew(30deg, 20deg)
+
+@keyframes green-triangle
+  0%
+    transform: skew(15deg, 15deg), rotate(25deg)
+  25%
+    transform: skew(10deg, 10deg), rotate(40deg)
+    border-bottom-color: rgba($primary-color, .5)
+  50%
+    transform: skew(0deg, 0deg), rotate(20deg)
+  75%
+    transform: skew(0deg, 180deg)
+  100%
+    transform: skew(15deg, 15deg), rotate(25deg)
