@@ -1,11 +1,14 @@
+import { AnimateSharedLayout } from "framer-motion";
 import { NavBar } from "../components";
 import "../styles/globals.sass";
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <NavBar />
-      <Component {...pageProps} />
+      <AnimateSharedLayout>
+        <NavBar />
+        <Component {...pageProps} />
+      </AnimateSharedLayout>
     </>
   );
 }

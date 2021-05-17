@@ -1,9 +1,13 @@
 import { useState, useRef } from "react";
 import Head from "next/head";
 import Image from "next/image";
+import {
+  MdArrowForward as ArrowForward,
+  MdArrowBack as ArrowBack,
+} from "react-icons/md";
+import { motion } from "framer-motion";
 import styles from "../styles/modules/Home.module.sass";
 import { Fab } from "../components";
-import { MdArrowForward as ArrowForward } from "react-icons/md";
 
 export default function Home() {
   const benefits = useRef([
@@ -38,11 +42,28 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
-        <Fab icon={<ArrowForward size={25} color="white" />} />
+        <Fab
+          layoutId="arrow_forward"
+          href="/about-us"
+          icon={<ArrowForward size={25} color="white" />}
+          initial={{ right: "-100px" }}
+          animate={{ right: "300px" }}
+          transition={{ delay: 0.2 }}
+        />
+        <Fab
+          layoutId="arrow_back"
+          href="/"
+          icon={<ArrowBack size={25} color="white" />}
+          initial={{ left: "-100px" }}
+        />
         <div className={styles.triangle} />
         <div className={styles.triangle} />
         <div className={styles.hero}>
-          <h1>
+          <motion.h1
+            transition={{ delay: 0.5 }}
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+          >
             Be proactive, not
             <br />
             reactive. We help your
@@ -50,14 +71,20 @@ export default function Home() {
             online business to
             <br />
             <span>{benefit}</span>
-          </h1>
-          <Image
-            className={styles.img_1}
-            src="/assets/img-1.png"
-            alt="IMG 1"
-            width={719}
-            height={450}
-          />
+          </motion.h1>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.3 }}
+          >
+            <Image
+              className={styles.img_1}
+              src="/assets/img-1.png"
+              alt="IMG 1"
+              width={719}
+              height={450}
+            />
+          </motion.div>
         </div>
       </main>
     </div>

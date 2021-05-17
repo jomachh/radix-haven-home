@@ -1,7 +1,7 @@
-@mixin center-flex
+@mixin flex($align: center, $justify: center)
   display: flex
-  align-items: center
-  justify-content: center
+  align-items: $align
+  justify-content: $justify
 
 @mixin title-style
   color: $text-light
