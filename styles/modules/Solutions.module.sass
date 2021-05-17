@@ -1,0 +1,34 @@
+@import "lib/variables"
+@import "lib/mixins"
+
+.main
+  padding: 2rem 0
+  flex: 1
+  @include flex(center, space-between)
+
+  max-width: $max-width
+  margin: 0 auto
+
+  h1
+    color: $primary-color
+    line-height: 40px
+
+.images
+  margin-left: 3.5rem
+
+.img
+  border-radius: $border-radius
+
+.imgAnim
+  margin-left: 50px
+  margin-top: -170px
+  animation: bounce 3000ms infinite
+  animation-timing-function: linear
+
+@keyframes bounce
+  0%
+    transform: translateY(0)
+  50%
+    transform: translateY(-15px)
+  100%
+    transform: translateY(0)

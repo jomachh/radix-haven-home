@@ -1,5 +1,4 @@
 import { useState, useRef } from "react";
-import Head from "next/head";
 import Image from "next/image";
 import {
   MdArrowForward as ArrowForward,
@@ -7,7 +6,7 @@ import {
 } from "react-icons/md";
 import { motion } from "framer-motion";
 import styles from "../styles/modules/Home.module.sass";
-import { Fab } from "../components";
+import { Fab, Container } from "../components";
 
 export default function Home() {
   const benefits = useRef([
@@ -35,12 +34,7 @@ export default function Home() {
   // }, [benefit]);
 
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Radix Haven</title>
-        <meta name="description" content="Redesign of Radix Haven's Homepage" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <Container title="Radix Haven">
       <main className={styles.main}>
         <Fab
           layoutId="arrow_forward"
@@ -87,6 +81,6 @@ export default function Home() {
           </motion.div>
         </div>
       </main>
-    </div>
+    </Container>
   );
 }

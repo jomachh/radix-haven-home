@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import Head from "next/head";
 import Image from "next/image";
 import styles from "../styles/modules/AboutUs.module.sass";
 import {
@@ -7,19 +6,15 @@ import {
   MdArrowBack as ArrowBack,
   MdCheckCircle as Check,
 } from "react-icons/md";
-import { Fab, ListItem } from "../components";
+import { Fab, ListItem, Container } from "../components";
 
 export default function AboutUs() {
   return (
-    <div className={styles.container}>
-      <Head>
-        <title>Radix Haven - About Us</title>
-        <meta name="description" content="Redesign of Radix Haven's Homepage" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+    <Container title="Radix Haven - About Us">
       <main className={styles.main}>
         <Fab
           layoutId="arrow_forward"
+          href="/solutions"
           position="right"
           icon={<ArrowForward size={25} color="white" />}
           initial={{ right: "300px" }}
@@ -139,6 +134,6 @@ export default function AboutUs() {
           </div>
         </div>
       </main>
-    </div>
+    </Container>
   );
 }
