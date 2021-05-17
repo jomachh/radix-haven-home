@@ -1,4 +1,4 @@
-Demo: [https://radix-haven-home.vercel.app/about-us]
+Demo: [https://radix-haven-home.vercel.app]
 
 ## Getting Started
 
