@@ -8,7 +8,7 @@ import {
   MdInsertChart as Chart,
   MdLightbulbOutline as Bulb,
 } from "react-icons/md";
-import styles from "../styles/modules/Products.module.sass";
+import styles from "../styles/pages/Products.module.sass";
 
 export default function Products() {
   const [selected, setSelected] = useState({

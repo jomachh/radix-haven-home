@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import styles from "../styles/modules/AboutUs.module.sass";
+import styles from "../styles/pages/AboutUs.module.sass";
 import {
   MdArrowForward as ArrowForward,
   MdArrowBack as ArrowBack,

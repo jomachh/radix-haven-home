@@ -1,4 +1,4 @@
-import styles from "../styles/modules/Solutions.module.sass";
+import styles from "../styles/pages/Solutions.module.sass";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Container, Fab } from "../components";

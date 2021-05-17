@@ -5,7 +5,7 @@ import {
   MdArrowBack as ArrowBack,
 } from "react-icons/md";
 import { motion } from "framer-motion";
-import styles from "../styles/modules/Home.module.sass";
+import styles from "../styles/pages/Home.module.sass";
 import { Fab, Container } from "../components";
 
 export default function Home() {

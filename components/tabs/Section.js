@@ -17,7 +17,13 @@ export const Section = ({
     animate={{ opacity: 1, scale: 1 }}
     transition={{ delay: 0.2 }}
   >
-    <Image src={imagePath} alt={name} width={535} height={337} />
+    <Image
+      className={styles.img}
+      src={imagePath}
+      alt={name}
+      width={535}
+      height={337}
+    />
     <h3>{subtitle}</h3>
     <div className={styles.content}>
       <label>{description}</label>
@@ -26,6 +32,7 @@ export const Section = ({
           const step = index + 3;
           return (
             <ListItem
+              key={index}
               icon={<Check size={25} color="#54ccf0" />}
               label={benefit}
               initial={{ opacity: 0, scale: 0.8 }}

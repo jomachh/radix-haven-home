@@ -1,0 +1,72 @@
+@import "lib/variables"
+@import "lib/mixins"
+
+.main
+  padding: 10rem 0
+  flex: 1
+  @include flex(center, space-between)
+  flex-direction: column
+  max-width: $max-width
+  margin: 0 auto
+
+  h1
+    color: $primary-color
+    text-align: center
+.form
+  max-width: 1000px
+  background-color: rgba($primary-color, .25)
+  border-radius: $border-radius
+  padding: 1.5rem
+
+.input
+  width: 45%
+  padding: .5rem 1.5rem
+  margin: 1rem 2%
+  border-radius: $border-radius
+  background-color: rgba($primary-color , .5)
+  border: none
+  color: $text-light
+  @include placeholder-color($primary-color)
+
+.select
+  border-radius: $border-radius
+  width: 45%
+  padding: .5rem 1.5rem
+  margin: 1rem 2%
+  background-color: rgba($primary-color , .5)
+  border: none
+  color: $text-light
+
+.countryPrefix
+  padding: .5rem .1rem
+  width: 17%
+  margin: 1rem .5%
+
+.phone
+  padding: .5rem 1rem
+  width: 28%
+
+.textarea
+  border-radius: $border-radius
+  padding: .5rem 1.5rem
+  margin: .5rem
+  background-color: rgba($primary-color , .5)
+  border: none
+  color: $text-light
+  @include placeholder-color($primary-color)
+  width: 95%
+
+.btn
+  display: flex
+  @include flex
+  height: 50px
+  border-radius: $border-radius
+  border: none
+  background-color: $secundary-color
+  @include title-style
+  transition: all 500ms ease
+  margin: 0 auto
+  width: 95%
+  cursor: pointer
+  &:hover
+    background-color: rgba($secundary-color, 0.5)

@@ -3,7 +3,7 @@ import {
   MdArrowForward as ArrowForward,
   MdArrowBack as ArrowBack,
 } from "react-icons/md";
-import styles from "../styles/modules/Faqs.module.sass";
+import styles from "../styles/pages/Faqs.module.sass";
 
 export default function Faqs() {
   return (
@@ -11,7 +11,7 @@ export default function Faqs() {
       <main className={styles.main}>
         <Fab
           layoutId="arrow_forward"
-          href="/"
+          href="/contact"
           position="right"
           icon={<ArrowForward size={25} color="white" />}
           initial={{ right: "300px" }}
