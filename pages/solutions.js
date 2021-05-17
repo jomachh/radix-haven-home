@@ -13,7 +13,7 @@ export default function Solutions() {
       <main className={styles.main}>
         <Fab
           layoutId="arrow_forward"
-          href="/"
+          href="/products"
           position="right"
           icon={<ArrowForward size={25} color="white" />}
           initial={{ right: "300px" }}
@@ -94,8 +94,8 @@ export default function Solutions() {
           >
             <Image
               className={styles.img}
-              src="/assets/img-3.png"
-              alt="img-2"
+              src="/assets/img-5.jpeg"
+              alt="img-5"
               width={535}
               height={337}
             />

@@ -1,0 +1,11 @@
+@import "lib/variables"
+@import "lib/mixins"
+
+.main
+  padding: 5rem 0
+  flex: 1
+  @include flex(flex-start, center)
+  max-width: $max-width
+  margin: 0 auto
+  h1
+    color: $primary-color

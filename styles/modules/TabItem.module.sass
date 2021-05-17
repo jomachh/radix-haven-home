@@ -1,0 +1,17 @@
+@import "lib/variables"
+@import "lib/mixins"
+
+.container
+  @include flex(center, flex-start)
+  padding: 2rem 1rem
+  cursor: pointer
+  transition: all 300ms ease
+  &:hover
+    background-color: $secundary-color
+
+  label
+    font-size: 25px
+    margin-left: 1.5rem
+
+.selected
+  background-color: $secundary-color
