@@ -1,0 +1,46 @@
+@import "lib/variables"
+@import "lib/mixins"
+
+.main
+  padding: 10rem 0
+  flex: 1
+  @include flex(center, space-between)
+  flex-direction: column
+  max-width: $max-width
+  margin: 0 auto
+
+  h1
+    color: $primary-color
+    text-align: center
+
+.chartContainer
+  width: 900px
+  margin-top: 1.5rem
+
+.btn
+  width: 100px
+  background-color: transparent
+  border-style: solid
+  border-color: $primary-color
+  border-radius: $border-radius
+  color: $text-light
+  padding: .5rem 1rem
+  margin: 0 1rem
+  user-select: none
+  cursor: pointer
+  transition: all 500ms ease
+  &:hover
+    background-color: $primary-color
+  &:active
+    transform: scale(0.95)
+    box-shadow: 0px 0px 10px 0px rgba($primary-color,0.75)
+
+.selected
+  background-color: $secundary-color
+  border-color: $secundary-color
+  transition: all 500ms ease
+  &:hover
+    background-color: $secundary-color
+  &:active
+    transform: scale(0.95)
+    box-shadow: 0px 0px 10px 0px rgba($secundary-color,0.75)

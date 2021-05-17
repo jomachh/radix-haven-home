@@ -6,5 +6,6 @@ import { TabItem } from "./tabs/TabItem";
 import { Tabs } from "./tabs/Tabs";
 import { Section } from "./tabs/Section";
 import { Faq } from "./faq/Faq";
+import { Chart } from "./chart/Chart";
 
-export { NavBar, Fab, ListItem, Container, TabItem, Tabs, Section, Faq };
+export { NavBar, Fab, ListItem, Container, TabItem, Tabs, Section, Faq, Chart };

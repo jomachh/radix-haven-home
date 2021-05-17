@@ -39,6 +39,11 @@ export const NavBar = () => {
             <a>Resources</a>
           </Link>
         </li>
+        <li>
+          <Link href="/demo">
+            <a>Demo</a>
+          </Link>
+        </li>
       </ul>
       <div className={styles.buttonsContainer}>
         <Link href="/">
