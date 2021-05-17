@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { MdSearch as Search } from "react-icons/md";
 import styles from "../../styles/components/Faq.module.sass";
 
-export const Faq = ({ question, answer }) => {
+export const Faq = ({ question, answer, transition }) => {
   const [isHovered, setHovered] = useState(false);
 
   return (
@@ -11,6 +11,9 @@ export const Faq = ({ question, answer }) => {
       className={styles.container}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: 1, scale: 1 }}
+      transition={transition}
     >
       <div>
         <Search size={35} color="#54ccf0" />

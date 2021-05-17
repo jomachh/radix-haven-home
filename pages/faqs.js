@@ -30,18 +30,22 @@ export default function Faqs() {
           an email to info@radixhaven.com.
         </label>
         <Faq
+          transition={{ delay: 0.3 }}
           question="What is Radix Haven?"
           answer="We are a Data Science Platform for Payment Gateways. We help online businesses to grow revenue, reduce churn and improve overall KPI."
         />
         <Faq
+          transition={{ delay: 0.4 }}
           question="How does it work?"
           answer="Start Free Trial for 14 days. Integrate your Payment Gateway in less than 10 min. For more information go to Pricing."
         />
         <Faq
+          transition={{ delay: 0.5 }}
           question="How does our Pricing work?"
           answer="You can upgrade your plan at any moment given during the Free Trial. We have 3 different types of plan depending on your number of monthly transactions. Your plan include data analytics to support your business decisions. For more information go to Pricing."
         />
         <Faq
+          transition={{ delay: 0.6 }}
           question="How does our Product work?"
           answer="We have 3 differents Add-ons that can only be added on Medium and Premium plans. If you want to learn more about our products, you can click on Machine Learning, Business Intelligence and Financial Tools."
         />
