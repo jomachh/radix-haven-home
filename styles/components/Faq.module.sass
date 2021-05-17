@@ -1,0 +1,17 @@
+@import "lib/variables"
+@import "lib/mixins"
+
+.container
+  margin-top: 1.5rem
+  padding: 2rem
+  background-color: rgba($primary-color , .5)
+  border-radius: $border-radius
+  min-width: 500px
+  max-width: 500px
+  cursor: pointer
+
+  div
+    @include flex(center, flex-start)
+    label
+      margin: 0 0 0 1.5rem
+      font-size: 22px

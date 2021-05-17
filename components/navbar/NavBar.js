@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import styles from "../../styles/modules/NavBar.module.sass";
+import styles from "../../styles/components/NavBar.module.sass";
 
 export const NavBar = () => {
   return (

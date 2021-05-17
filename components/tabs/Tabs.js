@@ -1,4 +1,4 @@
-import styles from "../../styles/modules/Tabs.module.sass";
+import styles from "../../styles/components/Tabs.module.sass";
 
 export const Tabs = ({ children }) => {
   return <div className={styles.container}>{children}</div>;

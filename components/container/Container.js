@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "../../styles/modules/Container.module.sass";
+import styles from "../../styles/components/Container.module.sass";
 export const Container = ({ title, children }) => {
   return (
     <div className={styles.container}>

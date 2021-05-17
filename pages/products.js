@@ -1,7 +1,5 @@
-import { useState, useMemo } from "react";
-import { motion } from "framer-motion";
+import { useState } from "react";
 import { Container, Fab, Tabs, TabItem, Section } from "../components";
-import Image from "next/image";
 import {
   MdArrowForward as ArrowForward,
   MdArrowBack as ArrowBack,
@@ -25,7 +23,7 @@ export default function Products() {
       <main className={styles.main}>
         <Fab
           layoutId="arrow_forward"
-          href="/"
+          href="/faqs"
           position="right"
           icon={<ArrowForward size={25} color="white" />}
           initial={{ right: "300px" }}

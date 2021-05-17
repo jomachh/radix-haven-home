@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
-import styles from "../../styles/modules/Fab.module.sass";
+import styles from "../../styles/components/Fab.module.sass";
 
 export const Fab = ({
   icon,

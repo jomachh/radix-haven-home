@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import styles from "../../styles/modules/ListItem.module.sass";
+import styles from "../../styles/components/ListItem.module.sass";
 
 export const ListItem = ({ icon, label, initial, transition, animate }) => (
   <motion.div

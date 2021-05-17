@@ -1,4 +1,4 @@
-import styles from "../../styles/modules/TabItem.module.sass";
+import styles from "../../styles/components/TabItem.module.sass";
 
 export const TabItem = ({ selected, icon, label, onClick }) => {
   return (

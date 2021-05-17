@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import { ListItem } from "../";
 import { MdCheckCircle as Check } from "react-icons/md";
-import styles from "../../styles/modules/Section.module.sass";
+import styles from "../../styles/components/Section.module.sass";
 
 export const Section = ({
   name,
